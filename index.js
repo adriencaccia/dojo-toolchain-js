@@ -1,3 +1,2 @@
-document
-  .getElementById("button-id")
-  .addEventListener("click", () => alert("Bonjour monde!"));
+import buttonCb from "./alert.js";
+document.getElementById("button-id").addEventListener("click", buttonCb);
