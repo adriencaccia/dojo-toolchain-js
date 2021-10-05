@@ -1,2 +1,2 @@
-import buttonCb from "./alert.js";
+import buttonCb from "./alert";
 document.getElementById("button-id").addEventListener("click", buttonCb);
