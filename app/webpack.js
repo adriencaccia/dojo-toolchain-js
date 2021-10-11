@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./js/index.js",
+  entry: ["./js/index.js", "../shared/windowSizeLogger.js"],
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
