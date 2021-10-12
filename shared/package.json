@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.0-dev.20211012"
+  }
+}
