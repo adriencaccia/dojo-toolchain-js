@@ -1,9 +1,9 @@
 {
   "plugins": [
     ["module-resolver", {
-      "root": ["."],
+      "cwd": "build",
       "alias": {
-        "@shared": "../shared"
+        "@shared": "./shared"
       }
     }]
   ]

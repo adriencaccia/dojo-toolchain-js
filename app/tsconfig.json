@@ -6,12 +6,11 @@
             "@shared/*": [
               "../shared/*"
             ]
-        },
-        "plugins": [{"transform": "@zerollup/ts-transform-paths" }],
+        }
     },
     "files": [
         "index.ts",
-        "alert.ts"
-      ],
-    
+        "alert.ts",
+        "../shared/windowSizeLogger.ts"
+      ]
 }
