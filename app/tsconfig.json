@@ -1,9 +1,17 @@
 {
     "compilerOptions": {
         "outDir": "js",
+        "baseUrl": "./",
+        "paths": {
+            "@shared/*": [
+              "../shared/*"
+            ]
+        },
+        "plugins": [{"transform": "@zerollup/ts-transform-paths" }],
     },
     "files": [
         "index.ts",
         "alert.ts"
-      ]
+      ],
+    
 }
