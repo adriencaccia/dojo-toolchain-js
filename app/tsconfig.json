@@ -1,16 +1,10 @@
 {
     "compilerOptions": {
         "outDir": "js",
-        "baseUrl": "./",
-        "paths": {
-            "@shared/*": [
-              "../shared/*"
-            ]
-        }
     },
     "files": [
         "index.ts",
         "alert.ts",
-        "../shared/windowSizeLogger.ts"
+        "shared/windowSizeLogger.ts"
       ]
 }
