@@ -1,9 +1,32 @@
 {
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "browser": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
   "scripts": {
-    "compile": "tsc"
+    "transpile": "babel . --extensions .ts",
+    "package": "rm -rf dist && yarn package:cjs && yarn package:esm && yarn package:types",
+    "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'",
+    "package:cjs": "NODE_ENV=cjs yarn transpile --out-dir dist/cjs",
+    "package:esm": "NODE_ENV=esm yarn transpile --out-dir dist/esm",
+    "package:types": "tsc"
   },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "typescript": "^4.5.0-dev.20211012"
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "concurrently": "^6.1.0",
+    "typescript": "^4.5.0-dev.20211013"
   },
   "dependencies": {
     "is-odd": "^3.0.1"

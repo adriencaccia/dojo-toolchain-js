@@ -1,0 +1,9 @@
+{
+  "name": "dojo-tollchain-js",
+  "version": "1.0.0",
+  "workspaces": ["shared", "app"],
+  "repository": "git@github.com:theodo/dojo-tollchain-js.git",
+  "author": "Pierre Glandon <pglandon78@gmail.com>",
+  "license": "MIT",
+  "private": "true"
+}

@@ -4,7 +4,6 @@
     },
     "files": [
         "index.ts",
-        "alert.ts",
-        "shared/windowSizeLogger.ts"
+     "alert.ts"
       ]
 }
