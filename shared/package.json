@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "typescript": "^4.5.0-dev.20211012"
+  },
+  "dependencies": {
+    "is-odd": "^3.0.1"
   }
 }

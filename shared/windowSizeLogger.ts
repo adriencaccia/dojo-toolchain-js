@@ -1,3 +1,3 @@
-type A = Awaited<Promise<string>>;
+import isOdd from "is-odd";
 
-export default () => console.log(window.innerHeight);
+export default () => console.log(isOdd(window.innerHeight));
