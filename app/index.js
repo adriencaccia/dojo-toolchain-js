@@ -1,4 +1,4 @@
-import { callback } from '../shared/clickCallback.js';
+import { callback } from './shared/clickCallback.js';
 
 document
   .getElementById("button-id")
