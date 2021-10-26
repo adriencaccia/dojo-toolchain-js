@@ -5,8 +5,9 @@
     ["module-resolver", {
       "root": ["."],
       "alias": {
-        "@shared": "../../shared"
+        "@shared": "./shared"
       }
-    }]
+    }],
+    "babel-plugin-add-import-extension"
   ]
 }
