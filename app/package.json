@@ -6,11 +6,11 @@
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "typescript": "^4.4.4"
   },
   "scripts": {
-    "compile": "tsc",
-    "transpile": "babel js -d build"
+    "transpile": "babel . --extensions .ts,.tsx -d build"
   }
 }

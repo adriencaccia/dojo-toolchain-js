@@ -1,9 +1,11 @@
  {
+    "presets": ["@babel/preset-typescript"],
+    "ignore": ["**/node_modules"],
   "plugins": [
     ["module-resolver", {
       "root": ["."],
       "alias": {
-        "@shared": "../shared"
+        "@shared": "../../shared"
       }
     }]
   ]
