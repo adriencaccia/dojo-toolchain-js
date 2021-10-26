@@ -4,6 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "postinstall": "rm -rf shared && ln -sf ../shared shared"
+    "postinstall": "rm -rf shared && ln -sf ../shared shared",
+    "transpile": "babel . --extensions .ts -d build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "babel-plugin-add-import-extension": "^1.6.0",
+    "typescript": "^4.4.4"
   }
 }
