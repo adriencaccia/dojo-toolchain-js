@@ -3,7 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "yarn transpile",
+    "transpile": "babel . --out-dir lib --extensions '.ts'"
+  },
+  "browser": "lib/",
   "dependencies": {
     "is-odd": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "babel-loader": "^8.2.3"
   }
 }
