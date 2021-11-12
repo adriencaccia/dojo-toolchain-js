@@ -1,1 +1,1 @@
-export {callback} from './clickCallback';
+export {callback, TestInterface, TestEnum} from './clickCallback';

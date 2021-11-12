@@ -5,3 +5,8 @@ export interface TestInterface {
     foo: number;
     bar: string;
 }
+
+export enum TestEnum {
+    A,
+    B
+}
