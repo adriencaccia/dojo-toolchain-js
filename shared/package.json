@@ -1,14 +1,21 @@
 {
   "name": "shared",
   "version": "1.0.0",
-  "main": "index.js",
+  "files": [
+    "lib/"
+  ],
+  "browser": "lib/esm/index.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/types/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "postinstall": "yarn transpile",
-    "transpile": "babel . --out-dir lib --extensions '.ts'"
+    "transpile": "babel . --extensions .ts",
+    "package": "rm -rf lib && yarn package:cjs && yarn package:esm && yarn package:types",
+    "package:cjs": "NODE_ENV=cjs yarn transpile --out-dir lib/cjs",
+    "package:esm": "NODE_ENV=esm yarn transpile --out-dir lib/esm",
+    "package:types": "tsc"
   },
-  "browser": "lib/",
-  "files": ["lib/"],
   "dependencies": {
     "is-odd": "^3.0.1"
   },
