@@ -1,0 +1,1 @@
+export const callback = () => alert("Bonjour le monde!");
