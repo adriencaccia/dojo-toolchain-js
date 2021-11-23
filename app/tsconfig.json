@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+      "outDir": "./js",
+      "target": "ES6", // For browser compatibility 
+    },
+     "include": [
+      "**/*.ts"
+    ]
+}
