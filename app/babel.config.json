@@ -1,0 +1,12 @@
+{
+  "presets": ["@babel/preset-typescript"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+        "@shared": "./shared"
+      }
+    },"babel-plugin-add-import-extension"]
+  ],
+  "ignore": ["**/node_modules"]
+}

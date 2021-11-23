@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
-      "outDir": "./js",
-      "target": "ES6", // For browser compatibility 
-    },
-     "include": [
-      "**/*.ts"
-    ]
+    "outDir": "./js",                                   /* Specify an output folder for all emitted files. */
+    "target": "ES6",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    }
+  },
+  "include": [
+    "**/*.ts"
+  ]
 }
