@@ -1,1 +1,2 @@
-export const callback = () => alert("Bonjour le monde!");
+import isOdd from "is-odd";
+export const callback = () => alert(`Hello: 7 is odd ? ${isOdd(7)}`);
